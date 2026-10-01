@@ -1,0 +1,10 @@
+{
+  "name": "abletime-codex-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official AbleTime plugin for OpenAI Codex",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/validate-plugin.mjs"
+  }
+}

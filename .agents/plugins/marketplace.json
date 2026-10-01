@@ -1,0 +1,20 @@
+{
+  "name": "abletime",
+  "interface": {
+    "displayName": "AbleTime"
+  },
+  "plugins": [
+    {
+      "name": "abletime",
+      "source": {
+        "source": "local",
+        "path": "./plugins/abletime"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+interface:
+  display_name: "Reports"
+  short_description: "Hand back a share link"
+  brand_color: "#D84315"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "AbleTime"
+      description: "Time and the board"
+      transport: "streamable_http"
+      url: "https://track.abletime.com/api/public/v2/mcp/full"
+    - type: "mcp"
+      value: "AbleTime Reports"
+      description: "Reports as a share link"
+      transport: "streamable_http"
+      url: "https://track.abletime.com/api/public/v2/mcp/reports"

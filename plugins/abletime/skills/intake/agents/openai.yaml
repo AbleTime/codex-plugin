@@ -1,0 +1,11 @@
+interface:
+  display_name: "Intake"
+  short_description: "File a report as a task"
+  brand_color: "#D84315"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "AbleTime"
+      description: "Time and the board"
+      transport: "streamable_http"
+      url: "https://track.abletime.com/api/public/v2/mcp/full"

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "abletime",
+  "version": "1.0.0",
+  "description": "Record time and run the AbleTime board from Codex.",
+  "author": {
+    "name": "AbleTime",
+    "url": "https://www.abletime.com"
+  },
+  "homepage": "https://www.abletime.com",
+  "repository": "https://github.com/AbleTime/codex-plugin",
+  "license": "MIT",
+  "keywords": ["abletime", "time-tracking", "project-management", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "AbleTime",
+        "shortDescription": "Record time and run the board",
+        "longDescription": "AbleTime for Codex records time and runs the project board. One connection covers time, tasks, and the board. A second connection covers reports and returns a share link. Skills cover recording, watches, intake, sorting, a bugfix pull request, the board, reports, and a walkthrough. Recording rules load when a session starts, after the hooks are trusted. A watch stays on the Codex session that started it and sends hits through AbleTime rather than chat.",
+        "developerName": "AbleTime",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://www.abletime.com",
+        "privacyPolicyURL": "https://track.abletime.com/terms/privacy",
+        "termsOfServiceURL": "https://track.abletime.com/terms/toc",
+        "defaultPrompt": [
+          "Record the time on the work I am doing.",
+          "Give me a share link for this week's hours."
+        ],
+        "brandColor": "#D84315",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  }
+}

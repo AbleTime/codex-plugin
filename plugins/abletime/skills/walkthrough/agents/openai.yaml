@@ -1,0 +1,4 @@
+interface:
+  display_name: "Walkthrough"
+  short_description: "Tour the Codex plugin"
+  brand_color: "#D84315"
