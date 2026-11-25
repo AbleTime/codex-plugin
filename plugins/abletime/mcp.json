@@ -5,7 +5,7 @@
       "type": "streamable-http",
       "url": "https://track.abletime.com/api/public/v2/mcp/full"
     },
-    "AbleTime Reports": {
+    "AbleTime-Reports": {
       "type": "streamable-http",
       "url": "https://track.abletime.com/api/public/v2/mcp/reports"
     }

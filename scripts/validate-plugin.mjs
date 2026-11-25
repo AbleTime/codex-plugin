@@ -205,14 +205,14 @@ if (mcp) {
   }
   const servers = mcp.mcpServers || {};
   const names = Object.keys(servers);
-  if (names.length !== 2 || !servers.AbleTime || !servers["AbleTime Reports"]) {
-    fail("mcp.json must declare exactly AbleTime and AbleTime Reports");
+  if (names.length !== 2 || !servers.AbleTime || !servers["AbleTime-Reports"]) {
+    fail("mcp.json must declare exactly AbleTime and AbleTime-Reports");
   }
   if (servers.AbleTime?.type !== "streamable-http" || servers.AbleTime?.url !== fullUrl) {
     fail("AbleTime must be streamable-http at the live full URL");
   }
-  if (servers["AbleTime Reports"]?.type !== "streamable-http" || servers["AbleTime Reports"]?.url !== reportsUrl) {
-    fail("AbleTime Reports must be streamable-http at the live reports URL");
+  if (servers["AbleTime-Reports"]?.type !== "streamable-http" || servers["AbleTime-Reports"]?.url !== reportsUrl) {
+    fail("AbleTime-Reports must be streamable-http at the live reports URL");
   }
   if (/Authorization/i.test(raw) || /Bearer/i.test(raw) || /\bPAT\b/i.test(raw) || raw.includes("${")) {
     fail("mcp.json must not contain credentials or variable substitution");
